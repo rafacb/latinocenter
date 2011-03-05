@@ -1,0 +1,9 @@
+From: [email]
+To: latinocenter-www@mit.edu
+Subject: [required-subject]
+Errors-To: owner-latinocenter-www@mit.edu
+
+[required-body]
+----
+NOTE: This message was sent using a WWW form. The address [email]
+was typed manually, and may easily be incorrect.

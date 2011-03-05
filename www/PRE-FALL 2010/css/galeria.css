@@ -1,0 +1,165 @@
+/* CSS para la galeria */
+
+.menu {
+font-family: verdana, sans-serif; 
+position:relative; 
+z-index:100;
+width:460px;
+margin:0 auto;
+height:50px;
+background:#575;
+border-top:380px solid #444;
+}
+
+.menu ul {
+padding:0; 
+margin:0;
+list-style-type: none;
+width:400px;
+height:26px;
+background:#444;
+padding:5px;
+margin:5px 40px 0 40px;
+position:absolute;
+border:1px solid #8a8;
+}
+
+.menu ul li {
+float:left;
+position:relative;
+}
+
+.menu ul li a img {border:0; float:left;}
+* html .menu ul li a img {float:none;}
+
+.menu ul li a, .menu ul li a:visited {
+float:left;
+width:32px;
+height:24px;
+margin:0 5px;
+text-decoration:none; 
+color:#000;
+border:1px solid #fff;
+cursor:default;
+}
+
+.menu ul li ul {
+position:absolute;
+top:-106px;
+left:-99999px;
+}
+
+.menu table {
+border-collapse:collapse;
+border:0; padding:0; margin:-4px;
+}
+
+.menu ul li:hover a,
+.menu ul li a:hover {
+border:1px solid #8a8;
+}
+
+.menu ul li:hover ul,
+.menu ul li a:hover ul {
+position:absolute;
+left:-45px;
+width:124px; height:94px;
+border:0; padding:0; margin:0;
+background:#444;
+}
+
+.menu ul li:hover ul li ul,
+.menu ul li a:hover ul li a ul {
+position:absolute;
+top:-270px;
+left:-99999px;
+}
+
+.menu ul li:hover ul li a,
+.menu ul li a:hover ul li a {
+text-decoration:none; 
+color:#000;
+border:1px solid #8a8;
+width:120px;
+height:90px;
+background:#000;
+}
+
+.menu ul li:hover ul li a b,
+.menu ul li a:hover ul li a b {
+display:block; 
+width:32px; 
+height:14px; 
+font-size:0; 
+background:#444 url(slides/point.gif); 
+position:absolute; 
+left:50px; 
+top:92px; 
+border-left:1px solid #8a8; 
+border-right:1px solid #8a8; 
+border-bottom:1px solid #8a8;}
+
+.menu ul li:hover ul li a:hover,
+.menu ul li a:hover ul li a:hover {
+border:1px solid #666;
+}
+
+.menu ul li:hover ul li:hover ul,
+.menu ul li a:hover ul li a:hover ul {
+left:0px; 
+}
+.menu ul li:hover ul li:hover ul.pos2,
+.menu ul li a:hover ul li a:hover ul.pos2 {
+left:-40px; 
+}
+.menu ul li:hover ul li:hover ul.pos3,
+.menu ul li a:hover ul li a:hover ul.pos3 {
+left:-85px; 
+}
+.menu ul li:hover ul li:hover ul.pos4,
+.menu ul li a:hover ul li a:hover ul.pos4 {
+left:-126px; 
+}
+.menu ul li:hover ul li:hover ul.pos5,
+.menu ul li a:hover ul li a:hover ul.pos5 {
+left:-170px; 
+}
+.menu ul li:hover ul li:hover ul.pos6,
+.menu ul li a:hover ul li a:hover ul.pos6 {
+left:-214px; 
+}
+.menu ul li:hover ul li:hover ul.pos7,
+.menu ul li a:hover ul li a:hover ul.pos7 {
+left:-258px; 
+}
+.menu ul li:hover ul li:hover ul.pos8,
+.menu ul li a:hover ul li a:hover ul.pos8 {
+left:-302px; 
+}
+
+.menu ul li:hover ul li:hover ul.pos9,
+.menu ul li a:hover ul li a:hover ul.pos9 {
+left:-352px; 
+}
+
+.menu ul li:hover ul li:hover ul li a span,
+.menu ul li a:hover ul li a:hover ul li a span {
+display:none;
+}
+
+.menu ul li:hover ul li:hover ul li a,
+.menu ul li a:hover ul li a:hover ul li a {
+width:440px; height:360px;
+border:1px solid #8a8;}
+
+.menu ul li:hover ul li:hover ul li a:hover,
+.menu ul li a:hover ul li a:hover ul li a:hover
+{border:1px solid #fc6;}
+
+.menu ul li:hover ul li:hover ul li a:hover span,
+.menu ul li a:hover ul li a:hover ul li a:hover span {
+display:block; font-size:10px; position:absolute; top:1px; left:6px; width:430px; background:#8a8; padding:5px; border-bottom:1px solid #fc6;}
+
+.menu ul li:hover ul li:hover ul li a:hover span:first-line,
+.menu ul li a:hover ul li a:hover ul li a:hover span:first-line {
+font-weight:bold; font-size:14px; color:#efe;}

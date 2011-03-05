@@ -1,0 +1,85 @@
+/* CSS Galeria 2 */
+
+/* default link style - needed to make the :active work correctly in IE */
+a, a:visited, a:hover, a:active {
+color:#000;
+}
+/* style the outer cntaining div to fit the landscape, portrait and buttons */
+#album {
+width:460px; 
+height:440px; 
+background:#eee url(gallery/deer.jpg) 0 40px no-repeat;
+border:1px solid #aaa;
+margin:0 auto;
+}
+/* remove the padding margin and bullets from the list. Add a top margin and width to fit the images and a position relative */
+.gallery {
+padding:0; 
+margin:390px 0 0 0; 
+list-style-type:none; 
+position:relative; 
+width:460px;
+}
+/* remove the default image border */
+.gallery ul{
+padding:0px;
+border:0px;
+}
+.gallery img {
+border:0;
+
+
+}
+/* make the list horizontal */
+.gallery li {
+float:left;
+
+
+}
+/* style the link text to be central in a surrounding box */
+.gallery li a, .gallery li a:visited {
+font-size:11px;
+float:left; 
+text-decoration:none; 
+color:#000; 
+background:#fff; 
+text-align:center; 
+width:26px; 
+height:26px; 
+line-height:24px; 
+border:1px solid #444;
+margin:2px;
+}
+/* position the images using an absolute position and hide them from view */
+.gallery li a img {
+	position:absolute;
+	top:-370px;
+	left:0;
+	visibility:hidden;
+	border:0;
+	width: -11px;
+	padding: 0px 0px 0px 10px;
+}
+/* fix the top position for the landscape images */
+.gallery li a img.landscape {
+top:-370px;
+}
+/* fix the left position for the portrait images */
+.gallery li a img.portrait {
+left:0;
+border-left:40px solid #eee;
+border-right:40px solid #eee;
+}
+/* style the hover background color for the text boxes */
+.gallery li a:hover {
+background:#ddd;
+}
+/* style the active/focus colors for the text boxes (required for IE) */
+.gallery li a:active, .gallery li a:focus {
+background:#444; 
+color:#fff;
+}
+/* make the images visible on active/focus */
+.gallery li a:active img, .gallery li a:focus img {
+visibility:visible;
+}
